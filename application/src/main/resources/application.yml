@@ -1,0 +1,16 @@
+micronaut:
+  application:
+    name: exampleapi
+  security:
+    authentication: idtoken
+    oauth2:
+      clients:
+        auth0:
+          client-id: 'XXXXXXXXXXXXXXXXXXX'
+          client-secret: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+          openid:
+            issuer: 'https://XXXXXXXXXX.us.auth0.com/'
+netty:
+  default:
+    allocator:
+      max-order: 3

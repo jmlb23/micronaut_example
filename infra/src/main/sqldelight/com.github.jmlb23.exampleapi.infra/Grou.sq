@@ -1,0 +1,13 @@
+CREATE TABLE grou (
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL
+);
+
+selectGroupByName:
+SELECT * FROM grou WHERE name = :name LIMIT 1;
+
+insertGroup:
+INSERT INTO grou VALUES (?,?);
+
+selectLastGroupRowId:
+SELECT last_insert_rowid();
